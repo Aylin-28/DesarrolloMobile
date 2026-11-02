@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "PermisosApp",
+    "slug": "PermisosApp",
+    "version": "1.0.0",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta aplicación requiere acceso a la cámara para tomar fotos institucionales.",
+        "NSMicrophoneUsageDescription": "Esta aplicación requiere acceso al micrófono para grabar notas de audio.",
+        "NSLocationWhenInUseUsageDescription": "Esta aplicación requiere acceso a tu ubicación para ofrecerte servicios basados en proximidad."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Danos acceso a la cámara para capturar evidencias.",
+          "microphonePermission": "Danos acceso al micrófono para grabar audio."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Danos acceso a tu ubicación para geolocalizar registros."
+        }
+      ]
+    ]
+  }
+}
